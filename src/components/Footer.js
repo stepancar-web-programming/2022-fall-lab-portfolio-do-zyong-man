@@ -1,8 +1,9 @@
-import { Container, Row, Col } from "react-bootstrap";
-import {AiFillFacebook, AiFillGithub, AiFillInstagram} from "react-icons/ai";
+import {Container, Row, Col} from 'react-bootstrap';
+import {AiFillFacebook, AiFillGithub, AiFillInstagram} from 'react-icons/ai';
+import React from 'react';
 
 export const Footer = () => {
-  const size_icon = 35;
+  const sizeIcon = 35;
   return (
     <footer className="footer">
       <Container>
@@ -13,13 +14,13 @@ export const Footer = () => {
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
               <a href="https://github.com/Maybenex1ime">
-                <AiFillGithub size = {size_icon}/>
+                <AiFillGithub size = {sizeIcon}/>
               </a>
               <a href="#">
-                <AiFillFacebook size = {size_icon}/>
+                <AiFillFacebook size = {sizeIcon}/>
               </a>
               <a href="#">
-                <AiFillInstagram size = {size_icon} />
+                <AiFillInstagram size = {sizeIcon} />
               </a>
             </div>
             <p>Thank you for attention</p>
@@ -27,5 +28,5 @@ export const Footer = () => {
         </Row>
       </Container>
     </footer>
-  )
-}
+  );
+};
