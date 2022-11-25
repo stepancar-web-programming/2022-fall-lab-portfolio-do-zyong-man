@@ -4,6 +4,7 @@ import headerImg from '../assets/img/header-img2.svg';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export const Banner = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -85,7 +86,7 @@ export const Banner = () => {
                       my passion and apply them to your interesting products
                     </p>
                     <button size={25} >
-                      <Nav.Link href="/skills"
+                      <Nav.Link as = {Link} to="/skills"
                         className={activeLink === 'skills' ?
                             'active navbar-link' : 'navbar-link'}
                         onClick={() => onUpdateActiveLink('skills')}
