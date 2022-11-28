@@ -352,7 +352,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 150px 0;
   position: relative;
-  min-height: 850px;
+  min-height: 900px;
   background-color: black;
   background-image: url('./assets/img/background.png');
 
